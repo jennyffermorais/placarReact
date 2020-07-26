@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react';
 import PlacarContainer from "./PlacarContainer";
 
 const dados = {
@@ -16,8 +15,8 @@ const dados = {
   },
 };
 
-export default class App extends React.Component {
-  render() {
-    return <PlacarContainer {...dados} />;
-  }
+function App() {
+  return <PlacarContainer {...dados} />;
 }
+
+export default App;

@@ -1,24 +1,36 @@
 {
   "name": "placar-react",
-  "version": "0.0.0",
-  "description": "Provides a basic structure to follow the v++ channel React series.",
-  "main": "src/app.js",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Jennyffer de Morais",
+  "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-0": "^6.3.13",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --history-api-fallback --content-base public"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "Jennyffer de Morais",
-  "license": "MIT"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
